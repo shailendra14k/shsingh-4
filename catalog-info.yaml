@@ -1,0 +1,31 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: shsingh-4
+  title: shsingh-4
+  annotations:
+    argocd/app-selector: rht-gitops.com/janus-argocd=shsingh-4-bootstrap
+    backstage.io/kubernetes-id: shsingh-4
+    janus-idp.io/tekton: shsingh-4
+    backstage.io/source-location: url:https://github.com/shailendra14k/shsingh-4
+    backstage.io/techdocs-ref: url:https://github.com/shailendra14k/shsingh-4
+    gitlab.com/project-slug: shailendra14k/shsingh-4
+
+  links:
+    - url: https://devspaces.apps.shailendra14k.in/#https://github.com/shailendra14k/shsingh-4
+      title: OpenShift Dev Spaces (VS Code)
+      icon: web
+    - url: https://devspaces.apps.shailendra14k.in/#https://github.com/shailendra14k/shsingh-4?che-editor=che-incubator/che-idea/latest
+      title: OpenShift Dev Spaces (JetBrains IntelliJ)
+      icon: web
+  tags:
+    - spring-boot
+    - java
+    - maven
+    - tekton
+    - argocd
+    - renovate
+spec:
+  type: service
+  owner: shailendra14k
+  lifecycle: demo
